@@ -1,46 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trend-Shop</title>
+    <title>Login | Trend-Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Trend-Shop</h1>
-    </header>
-    
-    <section id="products-container" class="grid-container">
-       
-    </section>
-    
+    <div class="auth-container">
+        <h2 id="form-title">Trend-Shop Login</h2>
 
-     <main>
-        <div id="products-container" class="grid-container"></div>
-    </main>
-    
+        <input type="email" id="email" placeholder="Enter email">
+        <input type="password" id="password" placeholder="Enter password">
 
-    <script>
- firebase.auth().onAuthStateChanged((user) => {
-    if (!user) {
-        console.log("No user logged in. Redirecting to auth.html...");
-        setTimeout(() => {
-            window.location.href = "auth.html";
-        }, 1000); // Small delay to prevent instant loop
-    } else {
-        console.log("User already logged in:", user.email);
-    }
-});
+        <!-- Hidden fields for Signup -->
+        <select id="gender" style="display: none;">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
 
-        </script>
-        
-        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
-        <script src="firebase-config.js"></script> <!-- Your Firebase config -->
-       
+        <input type="date" id="birthday" style="display: none;">
 
-    <script src="script.js"></script>
+        <!-- Buttons -->
+        <button id="auth-btn" onclick="handleAuth()">Login</button>
+        <button id="toggle-btn" onclick="toggleForm()">Signup</button>
+
+        <p>Or</p>
+        <button onclick="googleLogin()">Login with Google</button>
+
+        <p id="message"></p>
+    </div>
+  
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+<script type="module" src="firebase-config.js"></script>
+
+
+<script>
+    localStorage.clear(); // Clear any user session storage
+    sessionStorage.clear(); // Also clear session storage
+    console.log("Local storage cleared. Ready for new login/signup.");
+</script>
+
+<script type="module">
+    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+
+    const auth = getAuth();
+    signOut(auth)
+        .then(() => {
+            console.log("User signed out successfully.");
+            localStorage.clear();  // Clear stored user session
+            sessionStorage.clear();
+        })
+        .catch((error) => {
+            console.error("Error signing out:", error);
+        });
+</script>
+
+
+
+
+
+<script type="module" src="auth.js"></script>
+
 </body>
 </html>
+
+
+
