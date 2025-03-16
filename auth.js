@@ -39,7 +39,7 @@ async function handleAuth() {
             });
 
             alert("Signup successful! Redirecting...");
-            window.location.href = `index.html?gender=${gender}`;
+            window.location.href = `landing.html?gender=${gender}`;
         } catch (error) {
             alert(error.message);
         }
@@ -52,7 +52,7 @@ async function handleAuth() {
             const userDoc = await getDoc(doc(db, "users", user.uid));
             if (userDoc.exists()) {
                 const userData = userDoc.data();
-                window.location.href = `index.html?gender=${userData.gender}`;
+                window.location.href = `landing.html?gender=${userData.gender}`;
             } else {
                 alert("User data not found.");
             }
