@@ -1,0 +1,42 @@
+ID,Name,Price,Category,Stock,ImageURL
+1,Nike Air Max,120,male,50,https://burst.shopifycdn.com/photos/loafers-leaning-along-white-wall.jpg
+2,Adidas Running Shoes,110,male,40,https://burst.shopifycdn.com/photos/new-shoes.jpg
+3,Puma Sports White T-shirt Sneakers,95,male,60,https://burst.shopifycdn.com/photos/smiling-person-in-sunglasses-and-white-tshirt.jpg
+4,Reebok peach t-shirt Classic,105,male,30,https://cdn.pixabay.com/photo/2023/05/23/08/49/fashion-8012239_1280.jpg
+5,Denim Blue Cargo,130,male,35,https://cdn.pixabay.com/photo/2022/03/31/19/45/shoes-7103597_1280.jpg
+6,Jordan Retro shoes,150,male,20,https://burst.shopifycdn.com/photos/black-hightop-LED-shoes.jpg
+7,Converse High Tops,85,male,50,https://burst.shopifycdn.com/photos/womens-red-t-shirt.jpg
+8,U.S. polo Assn.,75,male,70,https://burst.shopifycdn.com/photos/smiling-person-in-sunglasses-and-white-tshirt.jpg
+9,New Balance 574,90,male,40,https://burst.shopifycdn.com/photos/white-tshirt-template.jpg
+10,Skechers Go Walk,100,male,55,https://burst.shopifycdn.com/photos/black-and-white-sneakers-against-purple-and-white.jpg
+11,Roadster regular check shirt,80,male,60,https://burst.shopifycdn.com/photos/forest-hiker.jpg
+12,Timberland Boots,180,male,25,https://burst.shopifycdn.com/photos/black-LED-shoes.jpg
+13,Merrell Hiking Shoes,140,male,20,https://burst.shopifycdn.com/photos/studded-flats.jpg
+14,Opaque Casual Shirt,130,male,35,https://media.istockphoto.com/id/471946077/photo/close-up-of-plaid-shirt.jpg
+15,ASICS Gel Nimbus,125,male,30,https://cdn.pixabay.com/photo/2016/09/02/11/10/boots-1638873_1280.jpg
+16,Nike Pegasus,115,male,50,https://burst.shopifycdn.com/photos/jogger-laces-up.jpg
+17,Highlander Fit Cottonn Denim,160,male,25,https://example.com/adidas-ultraboost.jpg
+18,Brooks Ghost,135,male,40,https://burst.shopifycdn.com/photos/red-LED-shoes.jpg
+19,Saucony Endorphin,145,male,30,https://burst.shopifycdn.com/photos/beige-trainers-in-front-of-yellow-beam.jpg
+20,Hoka One Clifton,150,male,20,https://burst.shopifycdn.com/photos/footwear-close-up-man-tying-shoelace-from-side.jpg
+21,Nike Air Force 1,110,male,60,https://burst.shopifycdn.com/photos/close-up-of-person-tying-their-shoe.jpg
+22,Adidas Stan Smith,95,male,70,https://cdn.pixabay.com/photo/2017/08/10/00/03/guy-2616282_1280.jpg
+23,Balenciaga Sneakers,750,male,10,https://burst.shopifycdn.com/photos/black-sneakers-with-white-sole.jpg
+24,Wrogn Men Slim Fit Jeans,690,male,15,https://cdn.pixabay.com/photo/2017/08/01/10/20/people-2564314_1280.jpg
+25,Women's Running Shoes,100,female,50,https://burst.shopifycdn.com/photos/pink-flatlay.jpg
+26,Pimu Denim Orint Fit,90,female,40,https://cdn.pixabay.com/photo/2017/09/29/15/45/woman-2799490_1280.jpg
+27,Adidas Women's Ultraboost,160,female,20,https://burst.shopifycdn.com/photos/classic-striped-tee.jpg
+28,Aayu Georgette FitDress,115,female,30,https://burst.shopifycdn.com/photos/fashion-model-in-pink.jpg
+29,Roadster Ribbed Fitted Crop Top,90,female,45,https://burst.shopifycdn.com/photos/pink-summer-outfit.jpg
+30,Fabme Squre Neck Top,100,female,50,https://burst.shopifycdn.com/photos/model-laughs-barefoot.jpg
+31,DressBerry Peplum Top,105,female,35,https://burst.shopifycdn.com/photos/model-with-leather-jacket-over-shoulders.jpg
+32,Kibo floral top,160,female,20,https://burst.shopifycdn.com/photos/model-in-heels-and-overalls-with-blue.jpg
+33,H&M Women FlaredLow Jeans,115,female,30,https://cdn.pixabay.com/photo/2017/08/10/00/03/guy-2616282_1280.jpg
+34,Roadster Ribbed Fitted Crop Top,90,female,45,https://burst.shopifycdn.com/photos/model-in-heels-and-overalls-with-blue.jpg
+35,Fabme Round Neck Top,100,female,50,https://burst.shopifycdn.com/photos/white-tee-with-pocket.jpg
+36,Tokio Wide Leg Trouser,105,female,35,https://cdn.pixabay.com/photo/2016/08/26/20/44/elan-1623090_1280.jpg
+37,Levis Wide Jeans,160,female,20,https://cdn.pixabay.com/photo/2011/06/12/04/58/nanjing-7866_1280.jpg
+38,Otabu Flared skirt,115,female,30,https://cdn.pixabay.com/photo/2017/07/31/20/41/people-2560869_1280.jpg
+39,Puma Ruby Shoes,90,female,45,https://cdn.pixabay.com/photo/2018/12/05/13/41/woman-3857758_1280.jpg
+40,Adidas Ford-up shoes,100,female,50,https://cdn.pixabay.com/photo/2017/04/09/18/54/shoes-2216498_1280.jpg
+41,H&M formal shirt,105,female,35,https://media.istockphoto.com/id/471946077/photo/close-up-of-plaid-shirt.jpg
