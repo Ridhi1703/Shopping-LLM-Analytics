@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 admin.initializeApp({
-    credential: admin.credential.cert(require("./trend-shop-71738-firebase-adminsdk-fbsvc-11eff928ec.json")),
+    credential: admin.credential.cert(require("./trend-shop-71738-firebase-adminsdk-fbsvc-e4a2ef9b11.json")),
     databaseURL: "https://trend-shop-71738-default-rtdb.firebaseio.com"
 });
 

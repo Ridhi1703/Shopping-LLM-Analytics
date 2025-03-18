@@ -22,13 +22,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
         fetchProducts(gender);
     }
+     
+    const BACKEND_URL = "https://shopping-backend-yuqg.onrender.com/"; // Replace with your actual Render URL
 
     function fetchProducts(gender) {
-        fetch(`http://localhost:5000/products?gender=${gender}`)
+        fetch(`${BACKEND_URL}/products?gender=${gender}`)
             .then(response => response.json())
             .then(data => displayProducts(data))
             .catch(error => console.error("Error fetching products:", error));
     }
+    
 
     function displayProducts(products) {
         productsContainer.innerHTML = "";
