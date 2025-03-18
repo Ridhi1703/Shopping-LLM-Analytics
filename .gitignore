@@ -9,3 +9,5 @@ firebase-debug.log
 firebase.json
 package.json
 package-lock.json
+.firebase/
+hosting..cache

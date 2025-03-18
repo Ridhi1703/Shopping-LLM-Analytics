@@ -74,7 +74,7 @@ onAuthStateChanged(auth, async (user) => {
     if (userDoc.exists()) {
         const userData = userDoc.data();
         console.log("User logged in, redirecting to index.html");
-        window.location.href = `index.html?gender=${userData.gender}`;
+        window.location.href = `landing.html?gender=${userData.gender}`;
     }
 });
 
