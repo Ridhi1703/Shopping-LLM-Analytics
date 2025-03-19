@@ -16,6 +16,9 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/11.4.0/firebase
 //     measurementId:import.meta.env.MEASUREMENTID
 // };
 
+// Debugging: Log environment variables
+console.log("API Key from Environment:", import.meta.env?.VITE_FIREBASE_API_KEY);
+
 const firebaseConfig = {
     apiKey: import.meta.env?.VITE_FIREBASE_API_KEY || "MISSING_API_KEY",
     authDomain: import.meta.env?.VITE_FIREBASE_AUTH_DOMAIN || "MISSING_AUTH_DOMAIN",
@@ -26,6 +29,14 @@ const firebaseConfig = {
     appId: import.meta.env?.VITE_FIREBASE_APP_ID || "MISSING_APP_ID",
     measurementId: import.meta.env?.VITE_FIREBASE_MEASUREMENT_ID || "MISSING_MEASUREMENT_ID"
 };
+
+// Check if API key is missing
+if (firebaseConfig.apiKey === "MISSING_API_KEY") {
+    console.error("🚨 Firebase API Key is missing! Make sure Netlify environment variables are set.");
+} else {
+    console.log("✅ Firebase API Key Loaded Successfully!");
+}
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
