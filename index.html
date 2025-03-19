@@ -36,15 +36,14 @@
         <p id="message"></p>
     </div>
 
+<script src="env.js"></script>
 <script type="module" src="firebase-config.js"></script>
-
 
 <script>
     localStorage.clear(); // Clear any user session storage
     sessionStorage.clear(); // Also clear session storage
     console.log("Local storage cleared. Ready for new login/signup.");
 </script>
-
 <script type="module">
   import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
 
@@ -60,11 +59,6 @@
             console.error("Error signing out:", error);
         });
 </script>
-
-
-
-
-
 <script type="module" src="auth.js"></script>
 
 </body>
