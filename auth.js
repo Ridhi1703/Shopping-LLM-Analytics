@@ -4,8 +4,8 @@ import {
     signInWithEmailAndPassword,
     onAuthStateChanged,
     signOut
-} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
-import { setDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+} from "firebase/auth";
+import { setDoc, doc, getDoc } from "firebase/firestore";
 
 let isSignup = false;
 
@@ -69,26 +69,40 @@ onAuthStateChanged(auth, async (user) => {
         return;
     }
 
-    // Fetch user data and redirect only when logging in
     const userDoc = await getDoc(doc(db, "users", user.uid));
     if (userDoc.exists()) {
         const userData = userDoc.data();
-        console.log("User logged in, redirecting to index.html");
+        console.log("User logged in, redirecting to landing.html");
         window.location.href = `landing.html?gender=${userData.gender}`;
     }
 });
 
-// Logout function
-function logout() {
+export function logout() {
     signOut(auth).then(() => {
         console.log("User signed out.");
-        localStorage.clear();  // Clears any stored session data
-        sessionStorage.clear(); // Clears temporary session data
-        window.location.href = "auth.html"; // Redirect to login page
+        localStorage.clear();
+        sessionStorage.clear();
+        window.location.href = "index.html";
     }).catch((error) => {
         console.error("Error signing out:", error);
     });
 }
+
+import { auth } from "./firebase-config.js";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+async function googleLogin() {
+    const provider = new GoogleAuthProvider();
+    try {
+        const result = await signInWithPopup(auth, provider);
+        console.log("Google Login Success:", result.user);
+        window.location.href = "landing.html";
+    } catch (error) {
+        console.error("Google Login Failed:", error);
+    }
+}
+window.googleLogin = googleLogin; // Attach to global scope
+
 
 // Attach logout event listener (Make sure there's a logout button in HTML)
 const logoutBtn = document.getElementById("logout-btn");
@@ -96,5 +110,7 @@ if (logoutBtn) {
     logoutBtn.addEventListener("click", logout);
 }
 
-document.getElementById("auth-btn").onclick = handleAuth;
-document.getElementById("toggle-btn").onclick = toggleForm;
+document.getElementById("auth-btn").addEventListener("click", handleAuth);
+document.getElementById("toggle-btn").addEventListener("click", toggleForm);
+document.getElementById("google-login-btn").addEventListener("click", googleLogin);
+

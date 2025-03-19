@@ -24,17 +24,15 @@
         <input type="date" id="birthday" style="display: none;">
 
         <!-- Buttons -->
-        <button id="auth-btn" onclick="handleAuth()">Login</button>
-        <button id="toggle-btn" onclick="toggleForm()">Signup</button>
+       
+<button id="auth-btn">Login</button>
+<button id="toggle-btn">Signup</button>
+<p>Or</p>
+<button id="google-login-btn">Login with Google</button>
 
-        <p>Or</p>
-        <button onclick="googleLogin()">Login with Google</button>
 
         <p id="message"></p>
     </div>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
 
 <script type="module" src="firebase-config.js"></script>
 
@@ -46,7 +44,8 @@
 </script>
 
 <script type="module">
-    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+  import { getAuth, signOut } from "firebase/auth";
+
 
     const auth = getAuth();
     signOut(auth)
