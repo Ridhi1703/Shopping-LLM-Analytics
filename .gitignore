@@ -10,4 +10,4 @@ package.json
 package-lock.json
 .firebaserc
 hosting..cache
-env.js
+

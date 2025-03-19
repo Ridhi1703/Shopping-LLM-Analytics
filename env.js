@@ -1,0 +1,11 @@
+window.env = {
+    VITE_FIREBASE_API_KEY:"AIzaSyAwIpZKZd3nfa8DWypJzF5n5x98Ec19e5c",
+    VITE_FIREBASE_AUTH_DOMAIN:"trend-shop-71738.firebaseapp.com",
+    VITE_FIREBASE_DATABASE_URL:"https://trend-shop-71738-default-rtdb.firebaseio.com",
+    VITE_FIREBASE_PROJECT_ID:"trend-shop-71738",
+    VITE_FIREBASE_STORAGE_BUCKET:"trend-shop-71738.firebasestorage.app",
+    VITE_FIREBASE_MESSAGING_SENDER_ID:"891803052310",
+    VITE_FIREBASE_APP_ID:"1:891803052310:web:e9731f1956156d53a88837",
+    VITE_FIREBASE_MEASUREMENT_ID:"G-M03QZMLEGF"
+  };
+  
