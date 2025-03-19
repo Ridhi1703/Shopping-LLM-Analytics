@@ -19,26 +19,15 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/11.4.0/firebase
 // Debugging: Log environment variables
 console.log("API Key from Environment:", import.meta.env?.VITE_FIREBASE_API_KEY);
 
-// const firebaseConfig = {
-//     apiKey: import.meta.env?.VITE_FIREBASE_API_KEY || "MISSING_API_KEY",
-//     authDomain: import.meta.env?.VITE_FIREBASE_AUTH_DOMAIN || "MISSING_AUTH_DOMAIN",
-//     databaseURL: import.meta.env?.VITE_FIREBASE_DATABASE_URL || "MISSING_DATABASE_URL",
-//     projectId: import.meta.env?.VITE_FIREBASE_PROJECT_ID || "MISSING_PROJECT_ID",
-//     storageBucket: import.meta.env?.VITE_FIREBASE_STORAGE_BUCKET || "MISSING_STORAGE_BUCKET",
-//     messagingSenderId: import.meta.env?.VITE_FIREBASE_MESSAGING_SENDER_ID || "MISSING_MESSAGING_SENDER_ID",
-//     appId: import.meta.env?.VITE_FIREBASE_APP_ID || "MISSING_APP_ID",
-//     measurementId: import.meta.env?.VITE_FIREBASE_MEASUREMENT_ID || "MISSING_MEASUREMENT_ID"
-// };
-
 const firebaseConfig = {
-    apiKey: process.env?.VITE_FIREBASE_API_KEY || "MISSING_API_KEY",
-    authDomain: process.env?.VITE_FIREBASE_AUTH_DOMAIN || "MISSING_AUTH_DOMAIN",
-    databaseURL: process.env?.VITE_FIREBASE_DATABASE_URL || "MISSING_DATABASE_URL",
-    projectId: process.env?.VITE_FIREBASE_PROJECT_ID || "MISSING_PROJECT_ID",
-    storageBucket: process.env?.VITE_FIREBASE_STORAGE_BUCKET || "MISSING_STORAGE_BUCKET",
-    messagingSenderId: process.env?.VITE_FIREBASE_MESSAGING_SENDER_ID || "MISSING_MESSAGING_SENDER_ID",
-    appId: process.env?.VITE_FIREBASE_APP_ID || "MISSING_APP_ID",
-    measurementId: process.env?.VITE_FIREBASE_MEASUREMENT_ID || "MISSING_MEASUREMENT_ID"
+    apiKey: import.meta.env?.VITE_FIREBASE_API_KEY || "MISSING_API_KEY",
+    authDomain: import.meta.env?.VITE_FIREBASE_AUTH_DOMAIN || "MISSING_AUTH_DOMAIN",
+    databaseURL: import.meta.env?.VITE_FIREBASE_DATABASE_URL || "MISSING_DATABASE_URL",
+    projectId: import.meta.env?.VITE_FIREBASE_PROJECT_ID || "MISSING_PROJECT_ID",
+    storageBucket: import.meta.env?.VITE_FIREBASE_STORAGE_BUCKET || "MISSING_STORAGE_BUCKET",
+    messagingSenderId: import.meta.env?.VITE_FIREBASE_MESSAGING_SENDER_ID || "MISSING_MESSAGING_SENDER_ID",
+    appId: import.meta.env?.VITE_FIREBASE_APP_ID || "MISSING_APP_ID",
+    measurementId: import.meta.env?.VITE_FIREBASE_MEASUREMENT_ID || "MISSING_MEASUREMENT_ID"
 };
 
 // Check if API key is missing
