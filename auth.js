@@ -4,8 +4,9 @@ import {
     signInWithEmailAndPassword,
     onAuthStateChanged,
     signOut
-} from "firebase/auth";
-import { setDoc, doc, getDoc } from "firebase/firestore";
+} from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+import { setDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
 
 let isSignup = false;
 
@@ -88,8 +89,9 @@ export function logout() {
     });
 }
 
-import { auth } from "./firebase-config.js";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+import { GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+
 
 async function googleLogin() {
     const provider = new GoogleAuthProvider();

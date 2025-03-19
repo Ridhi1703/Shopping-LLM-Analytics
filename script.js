@@ -1,6 +1,7 @@
-import { auth, db } from "./firebase-config.js";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { doc, getDoc } from "firebase/firestore";
+import { auth, db } from "./firebase-config.js"; // ✅ auth is already imported
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js"; // ✅ Only import what is needed
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
 
 document.addEventListener("DOMContentLoaded", async () => {
     const productsContainer = document.getElementById("products-container");
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const urlParams = new URLSearchParams(window.location.search);
     let gender = urlParams.get("gender");
 
-    const auth = getAuth(); // Ensure Firebase Auth is initialized
+
 
     if (!gender) {
         try {
