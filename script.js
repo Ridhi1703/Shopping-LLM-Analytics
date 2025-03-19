@@ -1,5 +1,5 @@
-import { auth, db } from "./firebase-config.js"; // ✅ auth is already imported
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js"; // ✅ Only import what is needed
+import { auth, db } from "./firebase-config.js"; // ✅ Keep import inside a module
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
 import { doc, getDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
 
